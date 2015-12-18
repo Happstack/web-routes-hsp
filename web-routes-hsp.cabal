@@ -1,5 +1,5 @@
 Name:             web-routes-hsp
-Version:          0.24.6
+Version:          0.24.6.1
 License:          BSD3
 License-File:     LICENSE
 Author:           jeremy@seereason.com
@@ -7,8 +7,10 @@ Maintainer:       partners@seereason.com
 Bug-Reports:      http://bugzilla.seereason.com/
 Category:         Web, Language
 Synopsis:         Adds XMLGenerator instance for RouteT monad
+Description:      The module makes it easy to use type-safe URLs in HSP templates
 Cabal-Version:    >= 1.6
 Build-type:       Simple
+tested-with:      GHC == 7.6.3, GHC == 7.8.4, GHC == 7.10.3
 
 Library
         Build-Depends:    base       >= 4    && < 5,
@@ -20,5 +22,4 @@ Library
 
 source-repository head
     type:     git
-    location: https://github.com/Happstack/web-routes.git
-    subdir:   web-routes-hsp
+    location: https://github.com/Happstack/web-routes-hsp.git
