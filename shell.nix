@@ -4,12 +4,12 @@ let
 
   inherit (nixpkgs) pkgs;
 
-  f = { mkDerivation, base, hsp, stdenv, text, web-routes }:
+  f = { mkDerivation, base, hsp, stdenv, text, web-routes, cabal-install }:
       mkDerivation {
         pname = "web-routes-hsp";
         version = "0.24.6.1";
         src = ./.;
-        libraryHaskellDepends = [ base hsp text web-routes ];
+        libraryHaskellDepends = [ base hsp text web-routes cabal-install ];
         description = "Adds XMLGenerator instance for RouteT monad";
         license = stdenv.lib.licenses.bsd3;
       };
